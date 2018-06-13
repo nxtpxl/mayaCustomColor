@@ -11,11 +11,8 @@ try:
     pass
 except NameError:
     currentColor = ['none']
-
-
 def rgba():
     allColors = currentColor
-    print allColors
     if allColors == []:
         print 'bbb'
         #slColor = currentColor[-1]    
@@ -37,7 +34,6 @@ def rgba():
         }
         """)
         currentColor.append('red')            
-
     if slColor == 'red':
         del currentColor[:]
         qApp.setStyleSheet("""
@@ -62,7 +58,6 @@ def rgba():
         qApp.setStyleSheet("")
     else:
         pass
-
 rgba()
 
 
